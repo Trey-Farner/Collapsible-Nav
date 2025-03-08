@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>ProxyGod</h1>
+
+        <div class="button">
+            <button class="openBtn" onclick="openNav()">☰</button>
+            <div class="sidePanel" id="mySidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "100vw";
+        }
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</body>
+</html>
